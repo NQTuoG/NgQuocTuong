@@ -12,11 +12,11 @@ import java.util.List;
 public class PhongBan {
     @Id
     @Column(name = "MaPhong")
-    @Size(max = 2, min = 1, message = "Ma PB must be less than 2 characters")
+    @Size(max = 2, min = 1, message = "MaPB must be less than 2 characters")
     private String Ma_Phong;
 
     @Column(name = "TenPhong")
-    @Size(max = 30, min = 1, message = "Ten PB must be less than 30 characters")
+    @Size(max = 30, min = 1, message = "TenPB must be less than 30 characters")
     private String Ten_Phong;
 
     @OneToMany(mappedBy = "PhongBan",cascade = CascadeType.ALL)

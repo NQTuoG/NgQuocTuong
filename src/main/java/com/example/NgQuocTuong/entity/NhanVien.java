@@ -3,7 +3,10 @@ package com.example.NgQuocTuong.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.Data;
+
 
 @Data
 @Entity
@@ -11,13 +14,13 @@ import lombok.Data;
 public class NhanVien {
     @Id
     @Column(name = "MaNV")
-    @NotEmpty(message = "Ma NV must not be empty")
-    @Size(max = 3, message = "Ma NV must be less than 3 characters")
+    @NotEmpty(message = "MaNV must not be empty")
+    @Size(max = 3, message = "MaNV must be less than 3 characters")
     private String Ma_NV;
 
     @Column(name = "TenNV")
     @NotEmpty(message = "Ten NV must not be empty")
-    @Size(max = 100,min = 1,message = "Ten NV must be less than 100 characters")
+    @Size(max = 100,min = 1,message = "TenNV must be less than 100 characters")
     private String Ten_NV;
 
     @Column(name = "Phai")
