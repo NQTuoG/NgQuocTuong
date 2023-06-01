@@ -2,7 +2,8 @@ package com.example.NgQuocTuong.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
+import java.util.HashSet;
+import java.util.Set;
 import java.util.Collection;
 import java.util.Collections;
 
